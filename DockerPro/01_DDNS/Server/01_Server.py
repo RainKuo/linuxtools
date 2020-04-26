@@ -82,8 +82,8 @@ class DDNSServer:
 		thread1.start()
 
 if __name__ == '__main__':
-	domain_name = ''
-	if domain_name =='': domain_name = input('input your domain name:')
+	domain_name = 'office.singmaan.com'
+	# if domain_name =='': domain_name = input('input your domain name:')
 	ddns = DDNSServer(12345,domain_name)
 	ddns.get_host_ip()
 	ddns.deploy_ddns_server()
